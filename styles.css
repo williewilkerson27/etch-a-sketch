@@ -1,5 +1,118 @@
-.board {
-    width: 500px;
-    height: 500px;
-    display: grid;
+.flex-container {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    
+    
+
 }
+
+.board {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    background-color: aliceblue;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0,0,0, 0.3);
+}
+.board:hover {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vh;
+    height: 60vh;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.mode {
+    margin-bottom: 0.5em;
+}
+
+.buttons {
+    padding: 0.3em 1.2em;
+    margin: 0.5em 0.3em 0.3em 0.3em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.blackBtn {
+    background-color: black;
+    color: whitesmoke;
+}
+.blackBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.erasorBtn {
+    background-color: black;
+    color: azure;
+}
+.erasorBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.grayBtn {
+    background-color: lightgray;
+    color: black;
+}
+.grayBtn:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.resetBtn {
+    background-color: black;
+    color: lightcoral;
+}
+.resetBtn:hover {
+    background-color: black;
+    color: red;
+}
+
+.randomBtn {
+    animation: randomBtnColor 3s infinite alternate running;
+    background-color: #f00;
+    
+}
+@keyframes randomBtnColor {
+    0% {
+		background-color: rgb(255, 82, 82);
+	}
+	25% {
+		background-color: greenyellow;
+	}
+	50% {
+		background-color: lightgoldenrodyellow;
+	}
+	75% {
+		background-color: lightblue;
+	}
+	100% {
+		background-color: lightseagreen;
+	}
+}
+
