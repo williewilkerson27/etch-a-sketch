@@ -1,6 +1,5 @@
 .body {
     background: linear-gradient(to left, blue, violet );
-    width: 100%;
     height: 100vh;
 }
 
@@ -24,8 +23,9 @@
 
 .div-etchasketch img {
     display: block;
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
     background: rgba(255, 255, 255, 0.2);
     bottom: -150px;
     animation: animate 25s linear infinite;
@@ -63,11 +63,25 @@
     animation-delay: 10s;
 }
 .div-etchasketch img:nth-child(6) {
-    left: 25%;
+    left: 45%;
     width: 35px;
     height: 35px;
     animation-delay: 6s;
     animation-duration: 16s;
+}
+.div-etchasketch img:nth-child(7) {
+    left: 75%;
+    width: 65px;
+    height: 65px;
+    animation-delay: 7s;
+    animation-duration: 26s;
+}
+.div-etchasketch img:nth-child(8) {
+    left: 18%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 2s;
+    animation-duration: 12s;
 }
 
 
@@ -79,7 +93,7 @@
     display: flex;
     flex-direction: column;
     align-items:center;
-    z-index: 3;
+    z-index: -1;
     
     /* background: linear-gradient(rgba(96, 79, 252, 0.082), white); */
 }
